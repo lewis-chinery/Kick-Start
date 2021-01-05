@@ -33,6 +33,6 @@ for t in range(1, T+1):
             num_moves += 1
         if name > largest_name:
             largest_name = name
-            
+    
     # print desired output
     print("Case #{}: {}".format(t, num_moves))
