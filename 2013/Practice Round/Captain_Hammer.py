@@ -22,7 +22,21 @@ T = int(input())
 for t in range(1, T+1):
     # get launch speed and distance travelled for each test
     V_D = input().split()
-    V, D = V_D[0], V_D[1]
+    V, D = int(V_D[0]), int(V_D[1])
+
+    # calculate theta
+    theta = 0.5 * math.asin(-9.8*D / (V**2))
+    # convert from radians to degrees
+    theta = 180/math.pi * theta
+    # return only ans between 0 and 90 degrees
+    if theta < 0:
+        theta = -1 * theta
+    if theta > 180:
+        theta = theta - 180
+    if theta > 90:
+        theta = 180 - theta
+    # return to 7 decimal places
+    theta = format(theta, '.7f')
 
     # print desired output
-    print("Case #{}: V = {}, D = {}".format(t, V, D))
+    print("Case #{}: {}".format(t, theta))
