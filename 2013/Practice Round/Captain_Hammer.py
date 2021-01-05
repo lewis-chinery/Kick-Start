@@ -10,13 +10,19 @@ sys.stdin=open(input_path, 'r')
 
 # ---------- Solution ----------
 
+# first use time = distance / horizontal speed
+# then use SUVAT eqn for vertical motion v = u + at
+# eliminate t and rearrange for theta (use sine double angle formula)
+
+import math
+
 # get number of test cases
 T = int(input())
 
 for t in range(1, T+1):
-    # get number of names in the test case
-    N = int(input())
-    N_out = N**3
+    # get launch speed and distance travelled for each test
+    V_D = input().split()
+    V, D = V_D[0], V_D[1]
 
     # print desired output
-    print("Case #{}: {}".format(t, N_out))
+    print("Case #{}: V = {}, D = {}".format(t, V, D))
