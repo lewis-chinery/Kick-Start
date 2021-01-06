@@ -21,8 +21,7 @@ T = int(input())
 
 for t in range(1, T+1):
     # get launch speed and distance travelled for each test
-    V_D = input().split()
-    V, D = int(V_D[0]), int(V_D[1])
+    V, D = [int(i) for i in input().split()]
 
     # calculate theta
     theta = 0.5 * math.asin(-9.8*D / (V**2))
