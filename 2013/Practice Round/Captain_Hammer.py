@@ -23,17 +23,9 @@ for t in range(1, T+1):
     # get launch speed and distance travelled for each test
     V, D = [int(i) for i in input().split()]
 
-    # calculate theta
-    theta = 0.5 * math.asin(-9.8*D / (V**2))
-    # convert from radians to degrees
-    theta = 180/math.pi * theta
-    # return only ans between 0 and 90 degrees
-    if theta < 0:
-        theta = -1 * theta
-    if theta > 180:
-        theta = theta - 180
-    if theta > 90:
-        theta = 180 - theta
+    # calculate theta (degrees between 0 and 90)
+    theta = 180/math.pi * abs(0.5 * math.asin(-9.8*D / (V**2)))
+
     # return to 7 decimal places
     theta = format(theta, '.7f')
 
