@@ -1,6 +1,9 @@
 # VSCode
 .vscode
 
+# C++ stuff (unless Python fails)
+*cpp*
+
 # solution output txt files
 *output.txt
 
