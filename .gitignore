@@ -7,6 +7,11 @@
 /Template_cpp/Template_cpp/*
 !/Template_cpp/Template_cpp/Template.cpp
 
+/2013/Practice*Round/CPP/Captain_Hammer_cpp/*
+!/2013/Practice*Round/CPP/Captain_Hammer_cpp/Captain_Hammer_cpp/
+/2013/Practice*Round/CPP/Captain_Hammer_cpp/Captain_Hammer_cpp/*
+!/2013/Practice*Round/CPP/Captain_Hammer_cpp/Captain_Hammer_cpp/Captain_Hammer.cpp
+
 # solution output txt files
 *output.txt
 
