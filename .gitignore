@@ -1,8 +1,11 @@
 # VSCode
 .vscode
 
-# C++ stuff (unless Python fails)
-*cpp*
+# Ignore C++ except .cpp script when Python fails
+/Template_cpp/*
+!/Template_cpp/Template_cpp/
+/Template_cpp/Template_cpp/*
+!/Template_cpp/Template_cpp/Template.cpp
 
 # solution output txt files
 *output.txt
